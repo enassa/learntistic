@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script  src="javas.js"></script>
+    
+</head>
+<body>
+<center><div id="maincontainer">
+    <div id="details">
+    <div id="name">
+    <p>Name: </p> <p id="nomen"></p>    
+    </div>
+    <div id="divide"></div>
+    <div id="scores"><p>Scores: </p> <p id="score">0</p></div>
+    </div>
+    
+    <div id="gameboard">
+        
+        <form>
+    <input placeholder="StartGame" id="input" type="text" onkeypress="return myKeyPress(event)" />
+        <p id="pp"></p>
+    </form>
+        
+     <div id="circle" class="aa"><p id="circ">KAF</p></div>
+    </div>
+    
+    
+</div></center>
+    
+
+
+</body>
+    <style> </style>
+    <script>
+     var yes;
+     var nope;
+        nope = new sound("noe.wav");
+        yes = new sound("yes.wav");
+     var score = 5;
+     (function(){  
+         document.getElementById("score").innerHTML =score;
+   })();
+        
+    </script>
+</html>
